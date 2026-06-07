@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-btn {
+    background: linear-gradient(135deg, #6a5acd, #483d8b) !important;
+    color: white !important;
+    border: 1px solid transparent !important;
+    border-radius: 10px !important;
+    padding: 0.1em !important;
+    min-width: 2.5rem; 
+    height: 2.5rem;
+    transition: all 0.2s ease !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-btn i {
+    font-size: 1rem; 
+}
+
+.custom-btn:hover {
+    background: transparent !important;
+    color: #483d8b !important;
+    border: 2px solid #483d8b !important;
+    font-weight: 800 !important;
+}
+
+#container input, 
+#signup, 
+#login {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.4s ease forwards;
+    }
+
+#signup {
+    animation-delay: 0.05s;
+}
+
+#login {
+    animation-delay: 0.1s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#container:has(input[placeholder="Your Email"]):not(:has(input[placeholder="Your Name"])) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#container:has(input[placeholder="Your Email"]):not(:has(input[placeholder="Your Name"])) .col-md-6 {
+    width: 100% !important;
+}
+@media (max-width: 576px) {
+    aside.container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #catalog-container {
+        gap: 0.5rem !important;
+    }
+
+    .catalog-card {
+        padding-left: 0.4rem !important;
+        padding-right: 0.4rem !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .catalog-card table th,
+    .catalog-card table td {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+};

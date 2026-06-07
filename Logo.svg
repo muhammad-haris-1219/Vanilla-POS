@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a5acd" />
+      <stop offset="100%" stop-color="#483d8b" />
+    </linearGradient>
+    
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(10, 10)" filter="url(#dropShadow)">
+    <rect x="10" y="5" width="90" height="90" rx="16" fill="#ffffff" stroke="url(#purpleGrad)" stroke-width="3"/>
+    
+    <path d="M 35 45 C 35 20, 75 20, 75 45" fill="none" stroke="url(#purpleGrad)" stroke-width="5" stroke-linecap="round"/>
+    
+    <path d="M 25 45 L 85 45 L 75 85 L 35 85 Z" fill="url(#purpleGrad)"/>
+    
+    <line x1="42" y1="55" x2="68" y2="55" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="45" y1="65" x2="53" y2="65" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="60" y1="65" x2="65" y2="65" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="47" y1="75" x2="63" y2="75" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <text x="125" y="62" font-family="'Poppins', 'Montserrat', 'Segoe UI', sans-serif" font-size="38" font-weight="800" fill="#483d8b" letter-spacing="1">
+    MART<tspan fill="#6a5acd">CALC</tspan>
+  </text>
+  
+  <text x="127" y="88" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#6c757d" letter-spacing="3" text-transform="uppercase">
+    Catalog &amp; Smart Billing
+  </text>
+</svg>
